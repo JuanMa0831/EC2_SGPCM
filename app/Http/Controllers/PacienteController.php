@@ -12,7 +12,7 @@ class PacienteController extends Controller
     public function index()
     {
         $pacientes = Paciente::all();
-        return view('pacientes.index', compact('pacientes'));
+        return view('paciente.index', compact('pacientes'));
     }
 
     /**
@@ -20,7 +20,7 @@ class PacienteController extends Controller
      */
     public function create()
     {
-        return view('pacientes.create');
+        return view('paciente.create');
     }
 
     /**
