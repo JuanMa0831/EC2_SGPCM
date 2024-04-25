@@ -3,7 +3,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Detalles del Paciente</h1>
+<div class="row">
+        <div class="col-md-6">
+<h1>Detalles del Paciente</h1>
     <p><strong>Nombre:</strong> {{ $paciente->nombre }}</p>
     <p><strong>Apellido:</strong> {{ $paciente->apellido }}</p>
     <p>Fecha de Nacimiento: {{ $paciente->fecha_nacimiento }}</p>
@@ -21,4 +23,6 @@
 
     <!-- Muestra más detalles del paciente según sea necesario -->
     <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Atras</a>
+    </div>
+    </div>
 @endsection

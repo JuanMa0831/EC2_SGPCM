@@ -1,20 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container mt-4">
+<div class="container">
     <h1>Listado de Pacientes</h1>
-    <a href="{{ route('pacientes.create') }}" class="btn btn-primary">Crear Nuevo Paciente</a>
+    <a href="{{ route('pacientes.create') }}" class="btn btn-primary mb3">Crear Nuevo Paciente</a>
     <table class="table">
         <thead>
             <tr>
-                <th>#Id</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
+                <th scope="col">#Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($pacientes as $paciente)
                 <tr>
-                <td><a href="{{ route('pacientes.show', $paciente->id) }}">{{ $paciente->id }}</a></td>
+                <td scope="col"><a href="{{ route('pacientes.show', $paciente->id) }}">{{ $paciente->id }}</a></td>
                     <td>{{ $paciente->nombre }}</td>
                     <td>{{ $paciente->apellido }}</td>
                     <td>
@@ -25,4 +27,5 @@
             @endforeach
         </tbody>
     </table>
+</div>
 @endsection
