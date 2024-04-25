@@ -8,6 +8,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Ruta indice principal
+Route::get('/', 'IndexController@index')->name('index');
 // Rutas para la gestión de pacientes
 Route::get('/pacientes', [PacienteController::class, 'index'])->name('pacientes.index');
 Route::get('/pacientes/create', [PacienteController::class, 'create'])->name('pacientes.create');
