@@ -11,6 +11,13 @@
     <p>Dirección: {{ $paciente->direccion }}</p>
     <p>Teléfono: {{ $paciente->telefono }}</p>
     <p>Email: {{ $paciente->email }}</p>
+
+    <form action="{{ route('pacientes.destroy', $paciente->id) }}" method="POST">
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="btn btn-danger">Eliminar Paciente</button>
+</form>
+
     <!-- Muestra más detalles del paciente según sea necesario -->
     <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Volver al Listado</a>
 @endsection
