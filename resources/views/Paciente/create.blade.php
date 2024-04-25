@@ -40,5 +40,6 @@
         <input type="email" name="email" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Volver al Listado</a>
 </form>
 @endsection

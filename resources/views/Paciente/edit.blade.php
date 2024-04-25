@@ -12,7 +12,7 @@
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" class="form-control" value="{{ $paciente->nombre }}" required>
         </div>
-        
+
         <div class="form-group">
             <label for="apellido">Apellido:</label>
             <input type="text" name="apellido" class="form-control" value="{{ $paciente->apellido }}" required>
@@ -40,5 +40,6 @@
 
         <!-- Agrega más campos del formulario según sea necesario -->
         <button type="submit" class="btn btn-primary">Actualizar Paciente</button>
+        <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Volver al Listado</a>
     </form>
 @endsection

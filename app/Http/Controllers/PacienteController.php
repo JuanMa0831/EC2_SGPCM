@@ -82,7 +82,7 @@ class PacienteController extends Controller
         $paciente->update($request->all());
 
         // Redirige a la página de detalles del paciente
-        return redirect()->route('paciente.show', $paciente)->with('success', 'Paciente actualizado exitosamente.');
+        return redirect()->route('pacientes.show', $paciente)->with('success', 'Paciente actualizado exitosamente.');
     }
 
     /**
