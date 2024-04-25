@@ -60,7 +60,7 @@ class PacienteController extends Controller
      */
     public function edit(Paciente $paciente)
     {
-        return view('pacientes.edit', compact('paciente'));
+        return view('paciente.edit', compact('paciente'));
     }
 
     /**
@@ -72,6 +72,9 @@ class PacienteController extends Controller
         $request->validate([
             'nombre' => 'required',
             'apellido' => 'required',
+            'direccion' => 'required',
+            'telefono' => 'required',
+            'email' => 'required',
             // Agrega otras reglas de validación según sea necesario
         ]);
 
