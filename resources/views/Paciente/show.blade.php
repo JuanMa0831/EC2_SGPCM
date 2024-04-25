@@ -16,8 +16,9 @@
     @csrf
     @method('DELETE')
     <button type="submit" class="btn btn-danger">Eliminar Paciente</button>
+    <a href="{{ route('pacientes.edit', $paciente) }}" class="btn btn-primary">Editar</a>
 </form>
 
     <!-- Muestra más detalles del paciente según sea necesario -->
-    <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Volver al Listado</a>
+    <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Atras</a>
 @endsection

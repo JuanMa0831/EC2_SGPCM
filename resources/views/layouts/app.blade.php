@@ -25,7 +25,7 @@ Clínicas Médicas</a>
     <!-- Pie de página -->
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Pie de página de tu aplicación</span>
+            <span class="text-muted">____________________________________________</span>
         </div>
     </footer>
 

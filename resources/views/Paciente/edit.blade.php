@@ -40,6 +40,6 @@
 
         <!-- Agrega más campos del formulario según sea necesario -->
         <button type="submit" class="btn btn-primary">Actualizar Paciente</button>
-        <a href="{{ route('pacientes.index') }}" class="btn btn-secondary">Volver al Listado</a>
+        <a href="{{ route('pacientes.show', $paciente->id) }}" class="btn btn-primary">Cancelar</a>
     </form>
 @endsection
