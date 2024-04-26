@@ -18,5 +18,16 @@ class cita extends Model
         'motivo_consulta',
     ];
     public $timestamps = false;
+    // Relación con el modelo de paciente
+    public function paciente()
+    {
+        return $this->belongsTo(Paciente::class);
+    }
+
+    // Relación con el modelo de médico
+    public function medico()
+    {
+        return $this->belongsTo(Medico::class);
+    }
 }
 

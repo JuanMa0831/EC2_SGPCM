@@ -62,14 +62,14 @@ class MedicoController extends Controller
     
         public function update(Request $request, $id)
         {
-            // Validar los datos del formulario
+          // Validar los datos del formulario
             $request->validate([
                 'nombre' => 'required',
                 'apellido' => 'required',
                 'especialidad'=> 'required',
                 'horarios'=> 'required',
                 'telefono'=> 'required',
-                'email'=> 'required',
+                'email'=> 'required',  
                 // Agrega aquí la validación para otros campos si es necesario
             ]);
     
