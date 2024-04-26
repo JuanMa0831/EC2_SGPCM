@@ -20,9 +20,11 @@
                     <td>{{ $paciente->nombre }}</td>
                     <td>{{ $paciente->apellido }}</td>
                     <td>
+                    
 
                         <!-- Agrega un formulario de eliminación aquí si lo necesitas -->
                     </td>
+                    <a href="{{ route('index') }}" class="btn btn-secondary">Salir</a>
                 </tr>
             @endforeach
         </tbody>
