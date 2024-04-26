@@ -5,7 +5,7 @@
 @section('content')
     <h1>Editar Paciente</h1>
     <!-- Formulario de edición de pacientes -->
-    <form action="{{ route('pacientes.update', $paciente) }}" method="POST">
+    <form action="{{ route('medicos.update', $medico) }}" method="POST">
         @csrf
         @method('PUT')
         <div class="form-group">
@@ -20,7 +20,7 @@
 
         <div class="form-group">
         <label for="especialidad">Especialidad:</label>
-        <input type="date" name="especialidad" class="form-control" value="{{ $medico->especialidad }}" required>
+        <input type="text" name="especialidad" class="form-control" value="{{ $medico->especialidad }}" required>
         </div>
 
         <div class="form-group">
@@ -40,7 +40,7 @@
 
         <!-- Agrega más campos del formulario según sea necesario -->
         <button type="submit" class="btn btn-primary">Actualizar Paciente</button>
-        <a href="{{ route('pacientes.show', $paciente->id) }}" class="btn btn-primary">Cancelar</a>
+        <a href="{{ route('medicos.show', $medico->id) }}" class="btn btn-primary">Cancelar</a>
     </form>
 @endsection
 

@@ -21,7 +21,7 @@
     </div>
     <div class="form-group">
     <label for="horario">Horarios:</label>
-    <textarea name="horario" id="horario" rows="4" placeholder="Ingresa los horarios aquí..."></textarea>
+    <input type="text" name="horario" class="form-control" required>
     </div>
     <div class="form-group">
         <label for="telefono">Teléfono:</label>

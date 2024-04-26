@@ -8,6 +8,7 @@
 <div class="container">
     <h1>Lista de Médicos</h1>
     <a href="{{ route('medicos.create') }}" class="btn btn-primary mb3">Crear Nuevo Médico</a>
+    <a href="{{ route('index') }}" class="btn btn-secondary">Salir</a>
     <table class="table">
         <thead>
             <tr>
@@ -29,7 +30,7 @@
 
                         <!-- Agrega un formulario de eliminación aquí si lo necesitas -->
                     </td>
-                    <a href="{{ route('index') }}" class="btn btn-secondary">Salir</a>
+                    
                 </tr>
             @endforeach
         </tbody>
