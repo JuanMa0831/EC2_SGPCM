@@ -14,6 +14,7 @@
                 <th scope="col">#Id</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido</th>
+                <th scope="col">Especialidad</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,7 @@
                 <td scope="col"><a href="{{ route('medicos.show', $medico->id) }}">{{ $medico->id }}</a></td>
                     <td>{{ $medico->nombre }}</td>
                     <td>{{ $medico->apellido }}</td>
+                    <td>{{$medico->especialidad}}</td>
                     <td>
                     
 
