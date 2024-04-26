@@ -11,6 +11,7 @@
     <h1>Índice Principal</h1>
     <ul>
         <li><a href="{{ route('pacientes.index') }}">Pacientes</a></li>
+        <li><a href="{{ route('medicos.index') }}">Medicos</a></li>
     
     </ul>
 </body>

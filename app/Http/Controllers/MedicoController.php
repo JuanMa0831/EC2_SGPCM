@@ -13,7 +13,7 @@ class MedicoController extends Controller
             $medicos = Medico::all();
             
             // Retornar la vista con los médicos
-            return view('medicos.index', compact('medicos'));
+            return view('medico.index', compact('medicos'));
         }
     
         public function create()
