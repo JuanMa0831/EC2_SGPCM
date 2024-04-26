@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PacienteController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -9,7 +10,7 @@ Route::get('/', function () {
 });
 
 //Ruta indice principal
-Route::get('/', 'IndexController@index')->name('index');
+Route::get('/indexp', [IndexController::class, 'index'])->name('index');
 // Rutas para la gestión de pacientes
 Route::get('/pacientes', [PacienteController::class, 'index'])->name('pacientes.index');
 Route::get('/pacientes/create', [PacienteController::class, 'create'])->name('pacientes.create');
