@@ -28,6 +28,10 @@ class MedicoController extends Controller
             $request->validate([
                 'nombre' => 'required',
                 'apellido' => 'required',
+                'especialidad'=> 'required',
+                'horarios'=> 'required',
+                'telefono'=> 'required',
+                'email'=> 'required',
                 // Agrega aquí la validación para otros campos si es necesario
             ]);
     
@@ -62,6 +66,10 @@ class MedicoController extends Controller
             $request->validate([
                 'nombre' => 'required',
                 'apellido' => 'required',
+                'especialidad'=> 'required',
+                'horarios'=> 'required',
+                'telefono'=> 'required',
+                'email'=> 'required',
                 // Agrega aquí la validación para otros campos si es necesario
             ]);
     
