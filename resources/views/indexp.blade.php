@@ -8,10 +8,10 @@
     <title>Índice Principal</title>
 </head>
 <body>
-    <h1>Índice Principal</h1>
+    <h1>Panel Principal - SGPCM</h1>
     <ul>
         <li><a href="{{ route('pacientes.index') }}">Pacientes</a></li>
-        <li><a href="{{ route('medicos.index') }}">Medicos</a></li>
+        <li><a href="{{ route('medicos.index') }}">Médicos</a></li>
     
     </ul>
 </body>
