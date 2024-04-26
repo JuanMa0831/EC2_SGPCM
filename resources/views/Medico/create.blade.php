@@ -3,7 +3,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Crear Nuevo HH Médico</h1>
+    <h1>Crear Nuevo Médico</h1>
     <!-- Formulario de creación de medicos -->
     <form action="{{ route('medicos.store') }}" method="POST">
         @csrf
