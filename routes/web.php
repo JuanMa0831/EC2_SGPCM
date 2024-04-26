@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\MedicoController;
+use App\Http\Controllers\CitaController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +29,11 @@ Route::get('/medicos/{medico}', [MedicoController::class, 'show'])->name('medico
 Route::get('/medicos/{medico}/edit', [MedicoController::class, 'edit'])->name('medicos.edit');
 Route::put('/medicos/{medico}', [MedicoController::class, 'update'])->name('medicos.update');
 Route::delete('/medicos/{medico}', [MedicoController::class, 'destroy'])->name('medicos.destroy');
+// Rutas para gestión de citas 
+Route::get('/citas', [CitaController::class, 'index'])->name('citas.index');
+Route::get('/citas/create', [CitaController::class, 'create'])->name('citas.create');
+Route::post('/citas', [CitaController::class, 'store'])->name('citas.store');
+Route::get('/citas/{cita}', [CitaController::class, 'show'])->name('citas.show');
+Route::get('/citas/{cita}/edit', [CitaController::class, 'edit'])->name('citas.edit');
+Route::put('/citas/{cita}', [CitaController::class, 'update'])->name('citas.update');
+Route::delete('/citas/{cita}', [CitaController::class, 'destroy'])->name('citas.destroy');
