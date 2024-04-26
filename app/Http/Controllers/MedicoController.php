@@ -19,7 +19,7 @@ class MedicoController extends Controller
         public function create()
         {
             // Retornar la vista para crear un nuevo médico
-            return view('medicos.create');
+            return view('medico.create');
         }
     
         public function store(Request $request)
@@ -44,7 +44,7 @@ class MedicoController extends Controller
             $medico = Medico::findOrFail($id);
             
             // Retornar la vista con los detalles del médico
-            return view('medicos.show', compact('medico'));
+            return view('medico.show', compact('medico'));
         }
     
         public function edit($id)
@@ -53,7 +53,7 @@ class MedicoController extends Controller
             $medico = Medico::findOrFail($id);
             
             // Retornar la vista para editar el médico
-            return view('medicos.edit', compact('medico'));
+            return view('medico.edit', compact('medico'));
         }
     
         public function update(Request $request, $id)

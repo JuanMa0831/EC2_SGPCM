@@ -1,12 +1,37 @@
 <!-- resources/views/medicos/create.blade.php -->
 
-<h1>Crear Nuevo Médico</h1>
+@extends('layouts.app')
 
-<!-- Formulario para crear un nuevo médico -->
-<form method="POST" action="{{ route('medicos.store') }}">
-    @csrf
-    <label for="nombre">Nombre:</label>
-    <input type="text" name="nombre" id="nombre">
-    <!-- Agrega aquí los campos restantes del formulario -->
-    <button type="submit">Guardar</button>
+@section('content')
+    <h1>Crear Nuevo Médico</h1>
+    <!-- Formulario de creación de medicos -->
+    <form action="{{ route('medicos.store') }}" method="POST">
+        @csrf
+        <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="especialidad">Especialidad:</label>
+        <input type="text" name="especialidad" class="form-control" required>
+    </div>
+    <div class="form-group">
+    <label for="horario">Horarios:</label>
+    <textarea name="horario" id="horario" rows="4" placeholder="Ingresa los horarios aquí..."></textarea>
+    </div>
+    <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" name="telefono" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="{{ route('medicos.index') }}" class="btn btn-secondary">Cancelar</a>
 </form>
+@endsection
