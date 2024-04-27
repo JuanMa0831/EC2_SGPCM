@@ -38,7 +38,7 @@
                     @endforeach
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            <button type="submit" class="btn btn-primary">Actualizar Cita</button>
             <a href="{{ route('citas.index') }}" class="btn btn-secondary">Cancelar</a>
         </form>
     </div>
