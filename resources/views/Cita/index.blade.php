@@ -18,8 +18,8 @@
             @foreach ($citas as $cita)
                 <tr>
                 <td scope="col"><a href="{{ route('citas.show', $cita->id) }}">{{ $cita->id }}</a></td>
-                    <td>{{ $cita->paciente }}</td>
-                    <td>{{ $cita->medico }}</td>
+                    <td>{{ $cita->paciente->nombre}}</td>
+                    <td>{{ $cita->medico->nombre }}</td>
                     <td>
                     
 

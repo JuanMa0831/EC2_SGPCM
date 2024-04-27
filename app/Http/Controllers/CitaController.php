@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Cita;
+use App\Models\Paciente;
+use App\Models\Medico;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -13,7 +15,7 @@ class CitaController extends Controller
      */
     public function index()
     {
-        $citas = Cita::all();
+        $citas = cita::all();
         return view('cita.index', compact('citas'));
     }
     
@@ -21,7 +23,10 @@ class CitaController extends Controller
     
     public function create()
     {
-        return view('cita.create');
+        $pacientes = Paciente::all();
+        $medicos = Medico::all(); 
+        return view('cita.create', compact('pacientes', 'medicos'));
+        
     }
 
     /**

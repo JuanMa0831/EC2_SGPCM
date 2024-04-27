@@ -41,5 +41,6 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Guardar Cita</button>
+        <a href="{{ route('citas.index') }}" class="btn btn-secondary">Cancelar</a>
     </form>
 @endsection

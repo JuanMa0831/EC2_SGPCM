@@ -12,6 +12,7 @@
     <ul>
         <li><a href="{{ route('pacientes.index') }}">Pacientes</a></li>
         <li><a href="{{ route('medicos.index') }}">Médicos</a></li>
+        <li><a href="{{ route('citas.index') }}">Citas</a></li>
     
     </ul>
 </body>
