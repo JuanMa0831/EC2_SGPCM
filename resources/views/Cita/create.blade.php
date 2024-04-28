@@ -4,9 +4,9 @@
 
 @section('content')
     <h1>Crear Nueva Cita</h1>
-    <form method="POST" action="{{ route('citas.store') }}">
+    <form action="{{ route('citas.store') }}" method="POST">
         @csrf
-
+        
         <div class="form-group">
             <label for="paciente_id">Paciente:</label>
             <select name="paciente_id" id="paciente_id" class="form-control">

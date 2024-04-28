@@ -37,13 +37,13 @@ class CitaController extends Controller
         // Validar los datos del formulario
         $request->validate([
             'paciente_id'=> 'required',
-            'médico_id'=> 'required',
+            'medico_id'=> 'required',
             'fecha_cita'=> 'required',
             'hora_cita'=> 'required',
             'motivo_consulta'=> 'required',
             // Agrega aquí la validación para otros campos si es necesario
         ]);
-
+        
         Cita::create($request->all());
         return redirect()->route('citas.index')->with('success', 'Cita creada exitosamente.');
     }

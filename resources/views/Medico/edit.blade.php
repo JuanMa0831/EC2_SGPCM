@@ -3,7 +3,7 @@
 <@extends('layouts.app')
 
 @section('content')
-    <h1>Editar Paciente</h1>
+    <h1>Editar Médico</h1>
     <!-- Formulario de edición de pacientes -->
     <form action="{{ route('medicos.update', $medico) }}" method="POST">
         @csrf
@@ -39,7 +39,7 @@
         </div>
 
         <!-- Agrega más campos del formulario según sea necesario -->
-        <button type="submit" class="btn btn-primary">Actualizar Paciente</button>
+        <button type="submit" class="btn btn-primary">Actualizar Médico</button>
         <a href="{{ route('medicos.show', $medico->id) }}" class="btn btn-primary">Cancelar</a>
     </form>
 @endsection

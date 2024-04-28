@@ -12,7 +12,7 @@ class cita extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'paciente_id',
-        'médico_id',
+        'medico_id',
         'fecha_cita',
         'hora_cita',
         'motivo_consulta',

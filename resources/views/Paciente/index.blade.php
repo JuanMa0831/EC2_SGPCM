@@ -5,6 +5,7 @@
 <div class="container">
     <h1>Listado de Pacientes</h1>
     <a href="{{ route('pacientes.create') }}" class="btn btn-primary mb3">Crear Nuevo Paciente</a>
+    <a href="{{ route('index') }}" class="btn btn-secondary">Salir</a>
     <table class="table">
         <thead>
             <tr>
@@ -24,7 +25,7 @@
 
                         <!-- Agrega un formulario de eliminación aquí si lo necesitas -->
                     </td>
-                    <a href="{{ route('index') }}" class="btn btn-secondary">Salir</a>
+
                 </tr>
             @endforeach
         </tbody>
