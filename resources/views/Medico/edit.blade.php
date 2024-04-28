@@ -93,8 +93,8 @@
             </div>
 
             <div class="form-group">
-                <label for="horario">Horarios:</label>
-                <input type="text" name="horario" class="form-control" value="{{ $medico->horario }}">
+                <label for="horarios">Horarios:</label>
+                <input type="text" name="horarios" class="form-control" value="{{ $medico->horario }}">
             </div>
 
             <div class="form-group">

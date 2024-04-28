@@ -29,7 +29,7 @@ class MedicoController extends Controller
                 'nombre' => 'required',
                 'apellido' => 'required',
                 'especialidad'=> 'required',
-                'horario'=> 'required',
+                'horarios'=> 'required',
                 'telefono'=> 'required',
                 'email'=> 'required',
                 // Agrega aquí la validación para otros campos si es necesario
@@ -63,7 +63,7 @@ class MedicoController extends Controller
                 'nombre' => 'required',
                 'apellido' => 'required',
                 'especialidad'=> 'required',
-                'horario'=> 'required',
+                'horarios'=> 'required',
                 'telefono'=> 'required',
                 'email'=> 'required',  
                 // Agrega aquí la validación para otros campos si es necesario
