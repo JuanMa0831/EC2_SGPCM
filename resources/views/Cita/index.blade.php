@@ -47,6 +47,7 @@
             background-color: #2c3e50;
             color: #fff;
         }
+        
 
         /* Resto de estilos */
         body {
@@ -68,6 +69,21 @@
             color: #333;
             text-align: center;
             margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        li a {
+            display: block;
+            text-decoration: none;
+        }
+        li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>

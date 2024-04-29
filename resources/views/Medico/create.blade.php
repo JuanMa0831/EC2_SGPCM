@@ -35,6 +35,7 @@
         }
 
         label {
+            font-weight: bold;
             display: block;
             margin-bottom: 5px;
         }
@@ -56,7 +57,7 @@
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            max-width: 600px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
